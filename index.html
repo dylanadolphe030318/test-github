@@ -1,175 +1,186 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio de Thomas</title>
+    <base href="./">
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap">
 </head>
 <body>
 
 <nav>
-    <img src="image/logo.png" alt="Logo de Thomas"/>
-
+    <picture class="brand-logo">
+        <source srcset="image/logo.webp" type="image/webp" />
+        <img src="image/logo.png" alt="Logo de Thomas" />
+    </picture>
     <div id="nav-links">
-            <a class="nav-link" href="index.html">Accueil</a>
-            <a class="nav-link" href="#blog">Blog</a>
-            <a class="nav-link" href="projets">Portfolio</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="#" id="menu-button"> <img src ="images/menu.png" alt="Menu"></a>
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link" href="#blog">Blog</a>
+        <a class="nav-link" href="#projets">Portfolio</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button id="menu-button">
+            <picture>
+                <source srcset="image/menu.webp" type="image/webp" />
+                <img src="image/menu.png" alt="Menu" />
+            </picture>
+        </button>
     </div>
 </nav>
 
 <header>
     <div id="header-content">
-            <h1>Hi, je suis Thomas, <br /> Graphiste</h1>
-            <p id="subtitle">Passionné par le code et le design, j’aide les entreprises et les créateurs à développer des sites modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques fluides et efficaces.</p>
-            <a href="#" id="button-cv">Télécharger mon CV</a>
+        <h1>Hi, je suis Thomas, <br /> Graphiste</h1>
+        <p id="subtitle">Passionné par le code et le design, j’aide les entreprises et les créateurs à développer des sites modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques fluides et efficaces.</p>
+        <a href="#" id="button-cv">Télécharger mon CV</a>
     </div>
-    <div>
-        <img src="image/photo.png" alt="Photo de Thomas"/>
+    <div class="hero-image">
+        <picture>
+            <source srcset="image/photo.webp" type="image/webp" />
+            <img src="image/photo.png" alt="Photo de Thomas" />
+        </picture>
     </div>
 </header>
 
 <section id="blog">
-     <h2>Articles récents</h2>
-     <div id="blog-content"></div>
- <div id="articles">
-        <div class="article-blog">       
-        <h3 class="article-title">Créer un design system à partir de zéro</h3>
+    <h2>Articles récents</h2>
+    <div id="blog-content"></div>
+    <div id="articles">
+        <div class="article-blog">
+            <h3 class="article-title">Créer un design system à partir de zéro</h3>
             <p class="date-category">
                 <span>12 Feb 2020</span>
                 <span>|</span>
                 <span>Design, Pattern</span>
-                </p>
-                 <p class="article-description">Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
+            </p>
+            <p class="article-description">Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
         </div>
-
-       <div class="article-blog">       
+        <div class="article-blog">
             <h3 class="article-title">Créer des icônes pixel perfect dans Figma</h3>
-               <p class="date-category">
+            <p class="date-category">
                 <span>12 Feb 2020</span>
                 <span>|</span>
                 <span>Figma, Icon Design</span>
-                </p> 
+            </p>
             <p class="article-description">Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
+        </div>
     </div>
-</div>
-
 </section>
 
-<section id="projets">
-    <h2>Travaux en vedette</h2>
-
-    <div class="projet">  
-      <div>
-         <img src="image/projet1.png" alt="Design de tableaux de bord" class="projet-image">     
-           </div>
-           
+<main>
+    <section id="projets">
+        <h2>Travaux en vedette</h2>
+        <div class="projet">
+            <div>
+                <picture>
+                    <source srcset="image/projet1.webp" type="image/webp"/>
+                    <img src="image/projet1.png" alt="Design de tableaux de bord" class="projet-image"/>
+                </picture>
+            </div>
             <div class="date-type">
-            <h3 class="projet-title">Design de tableaux de bord</h3>    
-  
-   
-            <span class="projet-date">2020</span>
-      
-            <span class="projet-type">Dashboard</span>
-        <p class="projet-description">Un projet de conception d’interface utilisateur pour une plateforme de gestion. L’objectif était de proposer un tableau de bord intuitif et esthétique.</p>
-   </div>     
-</div>
-   
-      <div class="projet">
-        <div>      
-        <img src="image/projet2.png" alt="Portraits vibrants de 2020" class="projet-image">
-         </div>
-       
+                <h3 class="projet-title">Design de tableaux de bord</h3>
+                <span class="projet-date">2020</span>
+                <span class="projet-type">Dashboard</span>
+                <p class="projet-description">Un projet de conception d’interface utilisateur pour une plateforme de gestion. L’objectif était de proposer un tableau de bord intuitif et esthétique.</p>
+            </div>
+        </div>
+        <div class="projet">
+            <div>
+                <picture>
+                    <source srcset="image/projet2.webp" type="image/webp"/>
+                    <img src="image/projet2.png" alt="Portraits vibrants de 2020" class="projet-image"/>
+                </picture>
+            </div>
             <div class="date-type">
-         <h3 class="projet-title">Portraits vibrants de 2020</h3>
-            <span class="projet-date">2018</span>
-            <span class="projet-type">Illustrations</span>
-        <p class="projet-description">Série d’illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant l’identité et l’émotion à travers le portrait</p>
-    </div>
-    </div>
-<div class="projet">
-         <div>
-        <img src="image/projet3.png" alt="36 jours de typographie" class="projet-image">
-         </div> 
+                <h3 class="projet-title">Portraits vibrants de 2020</h3>
+                <span class="projet-date">2018</span>
+                <span class="projet-type">Illustrations</span>
+                <p class="projet-description">Série d’illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant l’identité et l’émotion à travers le portrait.</p>
+            </div>
+        </div>
+        <div class="projet">
+            <div>
+                <picture>
+                    <source srcset="image/projet3.webp" type="image/webp"/>
+                    <img src="image/projet3.png" alt="36 jours de typographie" class="projet-image"/>
+                </picture>
+            </div>
             <div class="date-type">
-             <h3 class="projet-title">36 jours de typographie</h3>
-            <span class="projet-date">2018</span>
-            <span class="projet-type">Typographie</span>
-        <p class="projet-description">.Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
-    </div>
-
-
-     </section>
-     <div class="contact-formulaire"> 
-     <section id="contact"> 
-        <h2>Me contacter</h2>
-        <div id="contact-content">
-            <div id="coordonnees">
-<h3 class="contact-title">Parlons en</h3>
-    <p id="contact-intro">Vous avez une grande idée ou un projet à développer et besoin d’aide ? Contactez-moi, je serai ravi d’échanger avec vous et de vous accompagner.</p>
-<h3 class="contact-title">Email</h3>
-<p id="email">beebs@gmail.com</p>
-<h3 class="contact-title">Socials</h3>
-<p><a class="social-links" href="https://www.instagram.com" target="_blank">Instagram</a></p>
-<p><a class="social-links" href="https://www.x.com" target="_blank">Twitter</a></p>
-<p><a class="social-links" href="https://www.facebook.com" target="_blank">Facebook</a></p>
- </div>
- <form>
-                <label for="name">Nom</label>
-                <input type="text" name="nom" id="name" />
-
-              <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-
-                 <label for="service">Quels services vous intéressent ?</label>
-                 <select name="service" id="service"> 
-                   <option value="Intégration">Intégration</option>
-                   <option value="Maquette">Maquette</option>
-                   <option value="Typographie">Typographie</option>
-                </select>
-
-                 <label for="budget">Budget</label>
-                   <select name="budget" id="budget"> 
-                   <option value="0-500€">0-500€</option>
-                   <option value="500-2000 €">500-2000 €</option>
-                   <option value="2000€ et +">2000€ et +</option>
-                </select>
-
-                   <label for="message">Message</label>
-                   <textarea name="message" id="message"></textarea>
-            
-                   <button>Envoyer</button>
-                </form>
-           
-      </div>
-        
-          
-  
-  </section>
+                <h3 class="projet-title">36 jours de typographie</h3>
+                <span class="projet-date">2018</span>
+                <span class="projet-type">Typographie</span>
+                <p class="projet-description">Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
+            </div>
+        </div>
     </section>
 
-  <section>
+    <section id="contact">
+        <div class="contact-formulaire">
+            <div id="coordonnees">
+                <h3 class="contact-title">Parlons en</h3>
+                <p id="contact-intro">Vous avez une grande idée ou un projet à développer et besoin d’aide ? Contactez-moi, je serai ravi d’échanger avec vous et de vous accompagner.</p>
+                <h3 class="contact-title">Email</h3>
+                <p id="contact-email">beebs@gmail.com</p>
+                <h3 class="contact-title">Socials</h3>
+                <p><a class="social-links" href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></p>
+                <p><a class="social-links" href="https://www.x.com" target="_blank" rel="noreferrer">Twitter</a></p>
+                <p><a class="social-links" href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></p>
+            </div>
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" name="nom" id="name" />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label for="service">Quels services vous intéressent ?</label>
+                <select name="service" id="service">
+                    <option value="Intégration">Intégration</option>
+                    <option value="Maquette">Maquette</option>
+                    <option value="Typographie">Typographie</option>
+                </select>
+                <label for="budget">Budget</label>
+                <select name="budget" id="budget">
+                    <option value="0-500€">0-500€</option>
+                    <option value="500-2000 €">500-2000 €</option>
+                    <option value="2000€ et +">2000€ et +</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+</main>
 
+<footer class="site-footer">
     <div class="footer">
-    <footer>
-    <div id="icons-socials"> 
-    <a href="#" target="_blank"><img src="image/fb.png" alt="Facebook"></a>
-     <a href="#" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
-      <a href="#" target="_blank"><img src="image/twitter.png" alt="Twitter"></a>
-       <a href="#" target="_blank"><img src="image/linkedin.png" alt="LinkedIn"></a>
-   
-    <p id="copyright">Copyright ©2020 All rights reserved </p>
-    </footer>
-
-
-
-</div>  
-
- </section>
+        <div id="icons-socials">
+            <a href="#" target="_blank" rel="noreferrer">
+                <picture>
+                    <source srcset="image/fb.webp" type="image/webp" />
+                    <img src="image/fb.png" alt="Facebook" />
+                </picture>
+            </a>
+            <a href="#" target="_blank" rel="noreferrer">
+                <picture>
+                    <source srcset="image/instagram.webp" type="image/webp" />
+                    <img src="image/instagram.png" alt="Instagram" />
+                </picture>
+            </a>
+            <a href="#" target="_blank" rel="noreferrer">
+                <img src="image/twitter.png" alt="Twitter" />
+            </a>
+            <a href="#" target="_blank" rel="noreferrer">
+                <picture>
+                    <source srcset="image/linkedin.webp" type="image/webp" />
+                    <img src="image/linkedin.png" alt="LinkedIn" />
+                </picture>
+            </a>
+        </div>
+        <p id="copyright">Copyright ©2020 All rights reserved</p>
+    </div>
+</footer>
 </body>
 </html>
